@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>有機的、無機的 - Nove2023</title>
+    <style>
+        @font-face {
+        	font-family: 'Shippori-Medium';
+	        src: url(/files/Shippori_Mincho/ShipporiMincho-Medium.ttf);
+        }
+        @font-face {
+        	font-family: 'Shippori-Regular';
+	        src: url(/files/Shippori_Mincho/ShipporiMincho-Regular.ttf);
+        }
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            font-family: "Shippori-Regular", serif;
+        }
+        .main-details{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        h1{
+            position: absolute;
+            writing-mode: vertical-rl;
+            top: 0;
+            right: 0;
+            margin: 2rem;
+            padding: 0;
+            font-size: 4rem;
+            letter-spacing: 1rem;
+        }
+        h2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 2rem;
+            padding: 0;
+            font-size: 2rem;
+            font-family: sans-serif;
+            letter-spacing: 0.5rem;
+        }
+        h3{
+            position: absolute;
+            writing-mode: vertical-rl;
+            top: 0;
+            left: 0;
+            margin: 2rem;
+            padding: 0;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            letter-spacing: 0.25rem;
+        }
+        @media(max-width: 900px){
+            h1{
+                font-size: 3rem;
+                letter-spacing: 0.75rem;
+            }
+            h2{
+                font-size: 1.5rem;
+                letter-spacing: 0.25rem;
+            }
+        }
+        canvas {
+            display: block;
+            margin: auto;
+            padding: 0;
+            max-width: 100%;
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    </style>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/",
+            "palette": "./palette.js",
+            "vertex": "./vertex.js",
+            "fragment": "./fragment.js"
+        }
+    }
+    </script>
+    <script type="module" src="sketch.js"></script>
+</head>
+
+<body>
+    <canvas class="webgl" id="myCanvas"></canvas>
+    <div class="main-details">
+        <h3>
+            Nove2023
+        </h3>
+        <h1>
+            有機的、<br>
+            無機的
+        </h1>
+        <h2>
+            2023.11.2 - 11.3
+        </h2>
+    </div>
+</body>
+
+</html>
