@@ -1,6 +1,7 @@
 const vertexShader = /* glsl */ `
 
-precision mediump float;
+precision lowp float;
+// precision mediump float;
 precision highp int;
 
 uniform float u_intensity;

@@ -1,5 +1,7 @@
 const fragmentShader = /* glsl */ `
-precision mediump float;
+
+precision lowp float;
+// precision mediump float;
 
 varying vec2 vUv;
 varying vec3 vVertex;
