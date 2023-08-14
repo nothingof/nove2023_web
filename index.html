@@ -67,6 +67,32 @@
             display: flex;
             justify-content: space-between;
         }
+        iframe{
+            aspect-ratio: 1;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            width: 50%;
+            height: auto;
+            border: none;
+            filter: grayscale();
+        }
+        .details-flex{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            font-size: 1rem;
+        }
+        .details-flex p{
+            margin: 0;
+            padding: 0;
+        }
+        .details-flex h3{
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 0;
+            margin-top: 1.5rem;
+            padding: 0;
+        }
         #title{
             font-family: 'Shippori-Regular', serif;
             writing-mode: vertical-rl;
@@ -117,6 +143,12 @@
             #date{
                 font-size: 1.5rem;
                 letter-spacing: 0.25rem;
+            }
+            .details-flex{
+                flex-direction: column;
+            }
+            iframe{
+                width: 100%;
             }
         }
         @media(min-width:1200px){
@@ -191,6 +223,22 @@
             <p class="details-text">
                 この作品はインダストリアルアート学科3年3名が制作した淡いプロジェクションと電子音のインスタレーションです。テーマは「有機的、無機的」として、相対する2つの概念のクロスオーバーを試みました。有機的な自然と無機的な情報を、淡いCGと電子音によって表現しています。加えて、観覧者の動きが作品に取り込まれていくような要素も取り入れています。是非、刻一刻と移り変わる「かたち」をお楽しみください。
             </p>
+        </div>
+        <div class="about-details glass">
+                <h1 class="details-title">Details</h1>
+            <div class="details-flex">
+                <div>
+                    <h3>日時</h3>
+                    <p>2023年 11月2日(木) - 11月3日(金）</p>
+                    <p>午後1時 - 5時</p>
+                    <h3>場所</h3>
+                    <p>東京都立大学 南大沢キャンパス</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.4247897025457!2d139.37457561124756!3d35.61725303337185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e2bcb9759bd9%3A0xbdea70c84b94e196!2z5p2x5Lqs6YO956uL5aSn5a2mIOWNl-Wkp-ayouOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1691999287796!5m2!1sja!2sjp"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
     <div class="footer">
