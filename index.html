@@ -82,6 +82,10 @@
             font-family: sans-serif;
             letter-spacing: 0.5rem;
         }
+        #date span{
+            font-size: 0.75rem;
+            font-family: sans-serif;
+        }
         #place{
             margin: 2rem 0 0 2rem;
             padding: 0;
@@ -117,6 +121,11 @@
             .main{
                 width:900px;
                 margin: auto;
+            }
+        }
+        @supports (not (backdrop-filter: none)){
+            .glass{
+                background: rgba(255, 255, 255, 0.2);
             }
         }
         canvas {
@@ -163,7 +172,7 @@
                 東京都立大学 南大沢キャンパス
             </h3>
             <h2 id="date">
-                2023.11.2 - 11.3
+                2023.11.2<span>(木)</span> - 11.3<span>(金)</span>
             </h2>
         </div>
     </div>
