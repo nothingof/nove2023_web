@@ -24,8 +24,9 @@
             margin: 0;
             padding: 0;
             color: white;
+            cursor: pointer;
         }
-        h1{
+        #title{
             position: absolute;
             writing-mode: vertical-rl;
             top: 0;
@@ -35,7 +36,7 @@
             font-size: 4rem;
             letter-spacing: 1rem;
         }
-        h2{
+        #date{
             position: absolute;
             bottom: 0;
             left: 0;
@@ -45,7 +46,17 @@
             font-family: sans-serif;
             letter-spacing: 0.5rem;
         }
-        h3{
+        #place{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 2rem 0 5rem 2rem;
+            padding: 0;
+            font-size: 1rem;
+            font-family: sans-serif;
+            letter-spacing: 0.25rem;
+        }
+        #nove2023{
             position: absolute;
             writing-mode: vertical-rl;
             top: 0;
@@ -57,11 +68,11 @@
             letter-spacing: 0.25rem;
         }
         @media(max-width: 900px){
-            h1{
+            #title{
                 font-size: 3rem;
                 letter-spacing: 0.75rem;
             }
-            h2{
+            #date{
                 font-size: 1.5rem;
                 letter-spacing: 0.25rem;
             }
@@ -92,14 +103,17 @@
 <body>
     <canvas class="webgl" id="myCanvas"></canvas>
     <div class="main-details">
-        <h3>
+        <h3 id="nove2023">
             Nove2023
         </h3>
-        <h1>
+        <h1 id="title">
             有機的、<br>
             無機的
         </h1>
-        <h2>
+        <h3 id="place">
+            東京都立大学 南大沢キャンパス
+        </h3>
+        <h2 id="date">
             2023.11.2 - 11.3
         </h2>
     </div>
